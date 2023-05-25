@@ -4,7 +4,7 @@ public class PokemonIniciais {
 
     private final String melhorPokemon = "Charmander";
 
-    public void escolhendoPokemonInicial() {
+    public String escolhendoPokemonInicial() {
         System.out.println("--Escolhendo Pokemon Inicial--");
         this.pensando(1);
         System.out.println("\nPokémons Iniciais:");
@@ -14,6 +14,9 @@ public class PokemonIniciais {
         System.out.println("- Squirtle");
         this.pensando(1);
         System.out.println("\nO escolhido foi o melhor Pokémon: " + this.melhorPokemon + "!");
+
+
+        return this.melhorPokemon;
     }
 
     private void pensando(int time){
